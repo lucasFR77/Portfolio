@@ -715,6 +715,14 @@ body.dark .contentHome {
     animation: bounce 2s infinite ease-in-out;
 }
 
+body.dark .arrow {
+    width: 20px;
+    margin-top: 3rem;
+    bottom: 20px;
+    color: #fafafa;
+    animation: bounce 2s infinite ease-in-out;
+}
+
 @keyframes bounce {
     0%,
     20%,
