@@ -1434,8 +1434,24 @@ body.dark .fas {
         height: 80px;
         transition-duration: 0.2s;
     }
+    body.dark nav {
+        background: transparent;
+        box-shadow: none;
+        height: 80px;
+        transition-duration: 0.2s;
+    }
     .scrolling-active {
-        background-color: rgba(236, 236, 236, 0.3);
+        background-color: rgba(236, 236, 236, 0.5);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        -moz-backdrop-filter: blur(10px);
+        height: 80px;
+        border-radius: 0rem 0rem 1rem 1rem;
+        border-bottom: 1.5px solid rgb(255 255 255 / 30%);
+        box-shadow: 6px 6px 20px 0 rgb(0 0 0 / 15%);
+    }
+    body.dark .scrolling-active {
+        background-color: rgba(20, 20, 20, 0.5);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
         -moz-backdrop-filter: blur(10px);
