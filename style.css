@@ -838,7 +838,8 @@ body.dark .contentHome {
     -moz-backdrop-filter: blur(10px);
     border: 1px outset rgb(255 255 255);
     top: 125rem;
-    transition-duration: 0.2s;
+    transition: transform .3s;
+    transition-timing-function: cubic-bezier(0.445, 1.65, 0.455, 1.485);
 }
 
 body.dark .comp1,
@@ -863,7 +864,8 @@ body.dark .comp5 {
     -moz-backdrop-filter: blur(10px);
     border: 1px outset rgb(148 148 148);
     top: 125rem;
-    transition-duration: 0.2s;
+    transition: transform .3s;
+    transition-timing-function: cubic-bezier(0.445, 1.65, 0.455, 1.485);
 }
 
 .comp1:hover,
@@ -871,7 +873,8 @@ body.dark .comp5 {
 .comp3:hover,
 .comp4:hover,
 .comp5:hover {
-    transform: scale(1.05) translateZ(0);
+    transform: scale(1.05, 1.05);
+    -webkit-transform: scale(1.05, 1.05);
 }
 
 .comp1.active,
@@ -1631,20 +1634,23 @@ body.dark .fas {
         display: flex;
         flex-direction: column;
         align-items: center;
-        transition-duration: 0.2s;
+        transition: transform .3s;
+        transition-timing-function: cubic-bezier(0.445, 1.65, 0.455, 1.485);
     }
     .buttonplushover1:hover {
-        transform: scale(1.05) translateZ(0);
+        transform: scale(1.05, 1.05);
+        -webkit-transform: scale(1.05, 1.05);
     }
     .buttonplushover1:hover .chyout {
-        padding: 2px
+        padding: 2px;
     }
     .buttonplushover1:hover .chyout span {
         background: linear-gradient(rgb(255, 255, 255), rgb(246, 248, 248));
         padding: 17px 25px;
     }
     .buttonplushover2:hover {
-        transform: scale(1.05) translateZ(0);
+        transform: scale(1.05, 1.05);
+        -webkit-transform: scale(1.05, 1.05);
     }
     .buttonplushover2:hover .chyout {
         padding: 2px;
@@ -1654,7 +1660,8 @@ body.dark .fas {
         padding: 17px 25px;
     }
     .buttonplushover3:hover {
-        transform: scale(1.05) translateZ(0);
+        transform: scale(1.05, 1.05);
+        -webkit-transform: scale(1.05, 1.05);
     }
     .buttonplushover3:hover .chyout {
         padding: 2px;
@@ -1664,7 +1671,8 @@ body.dark .fas {
         padding: 17px 25px;
     }
     .buttonplushover4:hover {
-        transform: scale(1.05) translateZ(0);
+        transform: scale(1.05, 1.05);
+        -webkit-transform: scale(1.05, 1.05);
     }
     .buttonplushover4:hover .chyout {
         padding: 2px;
