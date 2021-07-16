@@ -1472,19 +1472,20 @@ body.dark .fas {
     .textCenter {
         font-size: 80px;
         border-width: 0 0 0.13em 0;
-        transition-duration: 0.2s;
+        transition: transform .3s;
+        transition-timing-function: cubic-bezier(0.445, 1.65, 0.455, 1.485);
         cursor: pointer;
     }
     body.dark .textCenter {
         font-size: 80px;
         border-width: 0 0 0.13em 0;
-        transition-duration: 0.2s;
+        transition: transform .3s;
+        transition-timing-function: cubic-bezier(0.445, 1.65, 0.455, 1.485);
         cursor: pointer;
     }
     .lucasplusgradient:hover .textCenter {
-        font-size: 82px;
-        block-size: 85%;
-        transition-duration: 0.3s;
+        transform: scale(1.05, 1.05);
+        -webkit-transform: scale(1.05, 1.05);
     }
     .lucasplusgradient:hover #solidGradient {
         opacity: 1;
