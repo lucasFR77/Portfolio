@@ -387,7 +387,7 @@ body.dark nav {
     opacity: 0;
     visibility: hidden;
     z-index: 3;
-    background-color: rgb(20 20 20 / 50%);
+    background-color: rgb(15, 15, 15);
     position: fixed;
     width: 100%;
     display: flex;
