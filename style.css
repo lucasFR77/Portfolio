@@ -848,6 +848,7 @@ body.dark .arrow {
 .comp3,
 .comp4,
 .comp5 {
+    cursor: pointer;
     box-sizing: border-box;
     display: flex;
     justify-content: space-around;
@@ -874,6 +875,7 @@ body.dark .comp2,
 body.dark .comp3,
 body.dark .comp4,
 body.dark .comp5 {
+    cursor: pointer;
     box-sizing: border-box;
     display: flex;
     justify-content: space-around;
