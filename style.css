@@ -182,9 +182,9 @@ html {
 /************dark mode*************/
 
 .buttonDark {
-    position: fixed;
-    bottom: 18px;
-    right: 25px;
+    margin-left: 1rem;
+    margin-right: 1.5rem;
+    margin-bottom: 4px;
     box-sizing: border-box;
 }
 
@@ -195,7 +195,7 @@ html {
 
 .label {
     background-color: #141414;
-    border: 2px solid white;
+    border: 1px solid white;
     border-radius: 50px;
     cursor: pointer;
     display: flex;
@@ -203,8 +203,8 @@ html {
     justify-content: space-between;
     padding: 5px;
     position: relative;
-    height: 30px;
-    width: 54px;
+    height: 21px;
+    width: 40px;
     transform: scale(1.5);
 }
 
@@ -214,14 +214,15 @@ html {
     position: absolute;
     top: 2px;
     left: 2px;
-    height: 22px;
-    width: 22px;
+    height: 15px;
+    width: 15px;
     transform: translateX(0px);
     transition: transform 0.2s linear;
 }
 
 .checkbox:checked+.label .ball {
-    transform: translateX(24px);
+    box-shadow: 0px 0px 6px 0px rgb(255 255 255);
+    transform: translateX(19px);
 }
 
 
