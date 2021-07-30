@@ -1533,11 +1533,7 @@ body.dark .fas {
         transform: scale(1.05, 1.05);
         -webkit-transform: scale(1.05, 1.05);
     }
-    .lucasplusgradient:hover #solidGradient {
-        opacity: 1;
-    }
     #solidGradient {
-        opacity: 0;
         width: 495px;
         height: 7px;
         margin-top: -5px;
