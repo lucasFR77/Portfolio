@@ -587,7 +587,7 @@ body.dark .burger .bar::after {
     justify-content: space-evenly;
     align-items: center;
     height: 800px;
-    padding: 40px;
+    padding-top: 30px;
 }
 
 
@@ -602,6 +602,7 @@ body.dark .burger .bar::after {
 
 .contentHomepage {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
@@ -611,12 +612,25 @@ body.dark .burger .bar::after {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     margin: 20px;
-    width: 40%;
+    width: 100%;
 }
 
 .partRight {
     background: url(img/bghome.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+body.dark .partRight {
+    background: url(img/bghomedark.png);
+    background-repeat: no-repeat;
     background-size: 100%;
     width: 50%;
     height: 600px;
@@ -631,10 +645,10 @@ body.dark .burger .bar::after {
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    width: 15.5rem;
-    height: 21rem;
+    width: 10.5rem;
+    height: 14rem;
     padding: 0.5rem;
-    margin-left: 6rem;
+    margin-left: 0rem;
     border-radius: 20px;
     background-image: linear-gradient( -20deg, rgb(185, 185, 185, 10%), rgb(255, 255, 255, 20%));
     box-shadow: 6px 6px 20px 0 rgb(0 0 0 / 30%);
@@ -644,35 +658,54 @@ body.dark .burger .bar::after {
     border: 1px outset rgb(255 255 255);
 }
 
-.textprez {
+body.dark .prezcard {
+    box-sizing: border-box;
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    line-height: 25px;
+    flex-direction: column;
+    width: 15.5rem;
+    height: 21rem;
+    padding: 0.5rem;
+    margin-left: 6rem;
+    border-radius: 20px;
+    background-image: linear-gradient( -20deg, rgb(0 0 0 / 60%), rgb(0 0 0 / 25%));
+    box-shadow: 6px 6px 20px 0 rgb(0 0 0 / 30%);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
+    border: 1px outset rgb(177 177 177);
 }
 
 .name {
     color: #F4F4F4;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .age {
     color: #F4F4F4;
     opacity: 0.7;
-    font-size: 20px;
-    font-family: 'FS_Meridian_light';
+    font-size: 16px;
 }
 
 .prof {
     color: #F4F4F4;
     opacity: 0.7;
-    font-size: 17px;
+    font-size: 13px;
 }
 
-.age {
-    color: #F4F4F4;
-    opacity: 0.7;
-    font-size: 20px;
+.cvprez span {
+    background: #fff;
+    display: block;
+    border-radius: 14px;
+    padding: 15px 15px;
+}
+
+.textprez {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 19px;
 }
 
 .cvprez {
@@ -682,17 +715,10 @@ body.dark .burger .bar::after {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-size: 22px;
+    font-size: 20px;
     padding: 3px;
     text-decoration: none;
     z-index: 3;
-}
-
-.cvprez span {
-    background: #fff;
-    display: block;
-    padding: 16px 37px;
-    border-radius: 14px;
 }
 
 #buttonGradientcv {
@@ -723,7 +749,6 @@ body.dark .burger .bar::after {
     width: 40%;
     box-shadow: 0px 0px 25px 0px rgb(118 197 255 / 60%);
     border-radius: 80px;
-    margin-top: 10px;
 }
 
 #lesh2 {
@@ -787,6 +812,7 @@ body.dark .burger .bar::after {
     color: #141414;
     font-family: 'FS_Meridian_medium';
     font-size: 36px;
+    text-align: center;
     border-style: solid;
     border-width: 0 0 .2em 0;
     width: fit-content;
@@ -808,7 +834,7 @@ body.dark .textCenter {
 .contentCenterHome {
     display: flex;
     flex-direction: column;
-    margin: 50px;
+    margin: 40px;
 }
 
 
@@ -821,7 +847,7 @@ body.dark .textCenter {
 
 #solidGradient {
     background: linear-gradient(45deg, hsla(249, 100%, 47%, 1), hsla(168, 100%, 50%, 1));
-    width: 225px;
+    width: 155px;
     height: 4px;
     filter: blur(5px);
 }
@@ -830,7 +856,7 @@ body.dark .textCenter {
     color: #141414b2;
     font-size: 16px;
     line-height: 22px;
-    margin: 50px 0 0 0;
+    text-align: center;
 }
 
 
@@ -845,14 +871,13 @@ body.dark .textCenter {
 body.dark .contentHome {
     color: #fafafab2;
     font-size: 16px;
-    text-align: center;
     line-height: 22px;
     margin: 24px;
 }
 
 .arrow {
     width: 20px;
-    margin-top: 3rem;
+    margin-top: 0rem;
     bottom: 20px;
     color: #141414;
     animation: bounce 2s infinite ease-in-out;
@@ -1652,7 +1677,7 @@ body.dark .fas {
     } */
     .homePage {
         height: 800px;
-        padding-top: 50px;
+        padding: 40px;
     }
     .memojiTop {
         width: 40%;
@@ -1677,13 +1702,18 @@ body.dark .fas {
         cursor: pointer;
     } */
     body.dark .textCenter {
-        font-size: 80px;
+        font-size: 60px;
+        line-height: 60px;
         border-width: 0 0 0.13em 0;
         transition: transform .3s;
         transition-timing-function: cubic-bezier(0.445, 1.65, 0.455, 1.485);
         cursor: pointer;
     }
     .lucasplusgradient:hover .textCenter {
+        transform: scale(1.05, 1.05);
+        -webkit-transform: scale(1.05, 1.05);
+    }
+    .lucasplusgradient:hover #solidGradient {
         transform: scale(1.05, 1.05);
         -webkit-transform: scale(1.05, 1.05);
     }
@@ -1702,10 +1732,60 @@ body.dark .fas {
     .contentHome {
         font-size: 20px;
         line-height: 27px;
+        margin: 50px 0 0 0;
     }
     body.dark .contentHome {
         font-size: 20px;
         line-height: 27px;
+        margin: 50px 0 0 0;
+    }
+    .contentHomepage {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+    }
+    .partLeft {
+        width: 40%;
+        padding-left: 20px;
+    }
+    .partRight {
+        background: url(img/bghome.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 50%;
+        height: 600px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .textprez {
+        line-height: 25px;
+    }
+    .name {
+        color: #F4F4F4;
+        font-size: 20px;
+    }
+    .age {
+        color: #F4F4F4;
+        opacity: 0.7;
+        font-size: 20px;
+        font-family: 'FS_Meridian_light';
+    }
+    .prof {
+        color: #F4F4F4;
+        opacity: 0.7;
+        font-size: 17px;
+    }
+    .prezcard {
+        width: 15.5rem;
+        height: 21rem;
+        padding: 0.5rem;
+        margin-left: 6rem;
+    }
+    .cvprez span {
+        padding: 16px 37px;
     }
     .contentCenterHome {
         margin: 30px 0 0 0;
