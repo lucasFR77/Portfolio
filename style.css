@@ -587,16 +587,137 @@ body.dark .burger .bar::after {
     justify-content: space-evenly;
     align-items: center;
     height: 800px;
-    padding-top: 40px;
+    padding: 40px;
 }
 
-.top {
+
+/* .homePage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 800px;
+    padding-top: 40px;
+} */
+
+.contentHomepage {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.partLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 20px;
+    width: 40%;
+}
+
+.partRight {
+    background: url(img/bghome.png);
+    background-size: 100%;
+    width: 50%;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.prezcard {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 15.5rem;
+    height: 21rem;
+    padding: 0.5rem;
+    margin-left: 6rem;
+    border-radius: 20px;
+    background-image: linear-gradient( -20deg, rgb(185, 185, 185, 10%), rgb(255, 255, 255, 20%));
+    box-shadow: 6px 6px 20px 0 rgb(0 0 0 / 30%);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
+    border: 1px outset rgb(255 255 255);
+}
+
+.textprez {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 25px;
+}
+
+.name {
+    color: #F4F4F4;
+    font-size: 20px;
+}
+
+.age {
+    color: #F4F4F4;
+    opacity: 0.7;
+    font-size: 20px;
+    font-family: 'FS_Meridian_light';
+}
+
+.prof {
+    color: #F4F4F4;
+    opacity: 0.7;
+    font-size: 17px;
+}
+
+.age {
+    color: #F4F4F4;
+    opacity: 0.7;
+    font-size: 20px;
+}
+
+.cvprez {
+    background: linear-gradient(to right, hsla(249, 100%, 47%, 1), hsla(168, 100%, 50%, 1));
+    border-radius: 17px;
+    color: #141414;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 22px;
+    padding: 3px;
+    text-decoration: none;
+    z-index: 3;
+}
+
+.cvprez span {
+    background: #fff;
+    display: block;
+    padding: 16px 37px;
+    border-radius: 14px;
+}
+
+#buttonGradientcv {
+    opacity: 0;
+    background: linear-gradient( 45deg, hsla(249, 100%, 47%, 1), hsla(168, 100%, 50%, 1));
+    width: 200px;
+    height: 40px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    margin-top: 27px;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    position: absolute;
+    z-index: 1;
+    transition-duration: 0.2s;
+}
+
+
+/* .top {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 20px;
-}
+} */
 
 .memojiTop {
     width: 40%;
@@ -608,8 +729,14 @@ body.dark .burger .bar::after {
 #lesh2 {
     display: flex;
     align-items: center;
-    margin: 40px;
 }
+
+
+/* #lesh2 {
+    display: flex;
+    align-items: center;
+    margin: 40px;
+} */
 
 .hello {
     font-size: 20px;
@@ -681,9 +808,16 @@ body.dark .textCenter {
 .contentCenterHome {
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin: 50px;
 }
+
+
+/* .contentCenterHome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+} */
 
 #solidGradient {
     background: linear-gradient(45deg, hsla(249, 100%, 47%, 1), hsla(168, 100%, 50%, 1));
@@ -695,10 +829,18 @@ body.dark .textCenter {
 .contentHome {
     color: #141414b2;
     font-size: 16px;
+    line-height: 22px;
+    margin: 50px 0 0 0;
+}
+
+
+/* .contentHome {
+    color: #141414b2;
+    font-size: 16px;
     text-align: center;
     line-height: 22px;
     margin: 24px;
-}
+} */
 
 body.dark .contentHome {
     color: #fafafab2;
@@ -1509,19 +1651,31 @@ body.dark .fas {
         border-image-slice: 1
     } */
     .homePage {
-        height: 750px;
+        height: 800px;
         padding-top: 50px;
     }
     .memojiTop {
-        width: 20%;
+        width: 40%;
+        margin-top: 0;
     }
+    /* .memojiTop {
+        width: 20%;
+    } */
     .textCenter {
-        font-size: 80px;
+        font-size: 60px;
+        line-height: 60px;
         border-width: 0 0 0.13em 0;
         transition: transform .3s;
         transition-timing-function: cubic-bezier(0.445, 1.65, 0.455, 1.485);
         cursor: pointer;
     }
+    /* .textCenter {
+        font-size: 80px;
+        border-width: 0 0 0.13em 0;
+        transition: transform .3s;
+        transition-timing-function: cubic-bezier(0.445, 1.65, 0.455, 1.485);
+        cursor: pointer;
+    } */
     body.dark .textCenter {
         font-size: 80px;
         border-width: 0 0 0.13em 0;
@@ -1534,11 +1688,17 @@ body.dark .fas {
         -webkit-transform: scale(1.05, 1.05);
     }
     #solidGradient {
-        width: 495px;
+        width: 255px;
         height: 7px;
         margin-top: -5px;
         transition-duration: 0.3s;
     }
+    /* #solidGradient {
+        width: 495px;
+        height: 7px;
+        margin-top: -5px;
+        transition-duration: 0.3s;
+    } */
     .contentHome {
         font-size: 20px;
         line-height: 27px;
@@ -1548,8 +1708,11 @@ body.dark .fas {
         line-height: 27px;
     }
     .contentCenterHome {
-        margin: 40px;
+        margin: 30px 0 0 0;
     }
+    /* .contentCenterHome {
+        margin: 40px;
+    } */
     .content {
         margin: 0 5rem 0 5rem;
     }
@@ -1670,6 +1833,7 @@ body.dark .fas {
         opacity: 1;
         transition-duration: 0.2s;
     }
+    .buttonplushovercv,
     .buttonplushover1,
     .buttonplushover2,
     .buttonplushover3,
@@ -1680,7 +1844,18 @@ body.dark .fas {
         transition: transform .3s;
         transition-timing-function: cubic-bezier(0.445, 1.65, 0.455, 1.485);
     }
-    .buttonplushover1:hover {
+    .buttonplushovercv:hover {
+        transform: scale(1.05, 1.05);
+        -webkit-transform: scale(1.05, 1.05);
+    }
+    .buttonplushovercv:hover .cvprez {
+        padding: 3px;
+    }
+    .buttonplushovercv:hover .cvprez span {
+        background: linear-gradient(rgb(255, 255, 255), rgb(246, 248, 248));
+        padding: 16px 37px;
+    }
+    .buttonplushovercv:hover {
         transform: scale(1.05, 1.05);
         -webkit-transform: scale(1.05, 1.05);
     }
@@ -1723,6 +1898,10 @@ body.dark .fas {
     .buttonplushover4:hover .chyout span {
         background: linear-gradient(rgb(255, 255, 255), rgb(246, 248, 248));
         padding: 17px 25px;
+    }
+    .buttonplushovercv:hover #buttonGradientcv {
+        opacity: 1;
+        transition-duration: 0.2s;
     }
     .buttonplushover1:hover #buttonGradient1 {
         opacity: 1;
