@@ -992,10 +992,10 @@ body.dark .arrow {
 
 @media only screen and (max-width:500px) {
     .ligne {
-        background-image: url(img/roundforme.png);
-        background-size: 128%;
+        background-image: url(img/bgforme.png);
+        background-size: 170%;
         background-position-y: 4rem;
-        background-position-x: -5rem;
+        background-position-x: -2rem;
         background-repeat: no-repeat;
         padding-top: 50px;
         padding-bottom: 30px;
@@ -2001,12 +2001,13 @@ body.dark .fas {
         transition-duration: 0.2s;
     }
     .ligne {
-        background-image: url(img/roundforme.png);
-        background-size: 100%;
-        background-position-y: 0rem;
+        background-image: url(img/bgforme.png);
+        background-size: 105%;
+        background-position-x: -40px;
+        background-position-y: 1rem;
         background-repeat: no-repeat;
-        width: 67rem;
-        --width: 67rem;
+        width: 100%;
+        --width: 100%;
         display: flex;
         justify-content: space-around;
         align-items: center;
