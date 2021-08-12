@@ -1009,6 +1009,25 @@ body.dark .arrow {
         grid-template-columns: repeat(6, auto);
         -webkit-overflow-scrolling: touch;
     }
+    body.dark .ligne {
+        background-image: url(img/bgformedark.png);
+        background-size: 170%;
+        background-position-y: 4rem;
+        background-position-x: -2rem;
+        background-repeat: no-repeat;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        width: 23.5rem;
+        margin-left: -1.3rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        display: grid;
+        grid-template-columns: repeat(6, auto);
+        -webkit-overflow-scrolling: touch;
+    }
 }
 
 .comp1,
@@ -2072,6 +2091,21 @@ body.dark .fab {
     }
     .ligne {
         background-image: url(img/bgforme.png);
+        background-size: 105%;
+        background-position-x: -40px;
+        background-position-y: 1rem;
+        background-repeat: no-repeat;
+        width: 100%;
+        --width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 3;
+        padding-bottom: 10rem;
+        padding-top: 5rem;
+    }
+    body.dark .ligne {
+        background-image: url(img/bgformedark.png);
         background-size: 105%;
         background-position-x: -40px;
         background-position-y: 1rem;
