@@ -913,6 +913,9 @@ body.dark .arrow {
 }
 
 #about {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
     margin-top: 30px;
     margin-bottom: 60px;
 }
@@ -957,7 +960,7 @@ body.dark .arrow {
 .textContent {
     margin-left: 10px;
     margin-right: 10px;
-    line-height: 20px;
+    line-height: 23px;
 }
 
 .cvbutton {
@@ -1488,6 +1491,7 @@ body.dark .card__by {
 #passion .pretitle {
     display: flex;
     flex-direction: column;
+    width: 50%;
 }
 
 #action {
@@ -1629,10 +1633,6 @@ body.dark .bgContact span {
 }
 
 a {
-    text-decoration: none;
-}
-
-body.dark .fab {
     color: #141414;
 }
 
@@ -1667,7 +1667,7 @@ body.dark .fab {
     color: #ffffff;
 }
 
-.wrapper .linkedin:hover,
+.wrapper .linkedin:hover a,
 .wrapper .linkedin:hover .tooltip,
 .wrapper .linkedin:hover .tooltip::before {
     background-color: #0e76a8;
@@ -1675,6 +1675,13 @@ body.dark .fab {
 }
 
 .wrapper .behance:hover,
+.wrapper .behance:hover .tooltip,
+.wrapper .behance:hover .tooltip::before {
+    background-color: #053eff;
+    color: #ffffff;
+}
+
+.wrapper .behance:hover a,
 .wrapper .behance:hover .tooltip,
 .wrapper .behance:hover .tooltip::before {
     background-color: #053eff;
@@ -1884,16 +1891,16 @@ body.dark .fab {
         margin: 40px;
     } */
     .content {
-        margin: 0 5rem 0 5rem;
+        margin: 0 10rem 0 10rem;
+    }
+    .lecontenu2 {
+        width: 70%;
     }
     .portski {
-        display: flex;
-        justify-content: flex-end;
-        margin-bottom: -90px;
-        margin-right: 100px;
+        width: 20%;
     }
     #portrait {
-        width: 230px;
+        width: 22%;
         border-radius: 20px;
     }
     #skills {
@@ -2125,10 +2132,12 @@ body.dark .fab {
     .bookibook {
         margin: 20px 10px 5px 10px;
         display: flex;
+        justify-content: space-between;
         align-items: center;
     }
     #passion {
         display: flex;
+        justify-content: space-between;
     }
     #action {
         width: 45%;
