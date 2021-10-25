@@ -30,6 +30,21 @@
     src: url(FS_Meridian/FSMeridian-Light.woff2);
 }
 
+@font-face {
+    font-family: 'Gustavo_Regular';
+    src: url(Gustavo/Gustavo-Regular.otf);
+}
+
+@font-face {
+    font-family: 'Gustavo_Medium';
+    src: url(Gustavo/Gustavo-Medium.otf);
+}
+
+@font-face {
+    font-family: 'Gustavo_Bold';
+    src: url(Gustavo/Gustavo-Bold.otf);
+}
+
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
 v2.0 | 20110126
@@ -418,7 +433,7 @@ body.dark .scrolling-active .nav a {
 .nav-list li a {
     text-decoration: none;
     text-transform: uppercase;
-    font-family: 'FS_Meridian_medium';
+    font-family: 'Gustavo_Medium';
     font-size: 1.2rem;
     color: #141414;
 }
@@ -723,8 +738,8 @@ body.dark .prezcard {
 #buttonGradientcv {
     opacity: 0;
     background: linear-gradient( 45deg, hsla(249, 100%, 47%, 1), hsla(168, 100%, 50%, 1));
-    width: 200px;
-    height: 40px;
+    width: 160px;
+    height: 33px;
     border-radius: 30px;
     -webkit-border-radius: 30px;
     margin-top: 27px;
@@ -809,7 +824,8 @@ body.dark .prezcard {
 
 .textCenter {
     color: #141414;
-    font-family: 'FS_Meridian_medium';
+    font-family: 'Gustavo_Bold';
+    /* font-family: 'FS_Meridian_medium'; */
     font-size: 36px;
     text-align: center;
     border-style: solid;
@@ -945,11 +961,11 @@ body.dark .arrow {
     background: -webkit-linear-gradient(45deg, hsla(249, 100%, 47%, 1), hsla(168, 100%, 50%, 1));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: 'FS_Meridian_bold';
+    font-family: 'Gustavo_Bold';
 }
 
 .title {
-    font-family: 'FS_Meridian_bold';
+    font-family: 'Gustavo_Bold';
     font-size: 2.5rem;
     font-weight: bold;
     line-height: 1.25;
@@ -1961,8 +1977,8 @@ a {
     #buttonGradient2 {
         opacity: 0;
         background: linear-gradient( 45deg, hsla(249, 100%, 47%, 1), hsla(168, 100%, 50%, 1));
-        width: 125px;
-        height: 50px;
+        width: 100px;
+        height: 45px;
         border-radius: 30px;
         -webkit-border-radius: 30px;
         margin-top: 10px;
@@ -1975,8 +1991,8 @@ a {
     #buttonGradient3 {
         opacity: 0;
         background: linear-gradient( 45deg, hsla(249, 100%, 47%, 1), hsla(168, 100%, 50%, 1));
-        width: 260px;
-        height: 40px;
+        width: 220px;
+        height: 37px;
         border-radius: 30px;
         -webkit-border-radius: 30px;
         margin-top: 20px;
@@ -1989,8 +2005,8 @@ a {
     #buttonGradient4 {
         opacity: 0;
         background: linear-gradient( 45deg, hsla(249, 100%, 47%, 1), hsla(168, 100%, 50%, 1));
-        width: 210px;
-        height: 40px;
+        width: 195px;
+        height: 37px;
         border-radius: 30px;
         -webkit-border-radius: 30px;
         margin-top: 20px;
