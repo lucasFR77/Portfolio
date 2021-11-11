@@ -4,7 +4,7 @@ window.addEventListener('scroll', function() {
     nav.classList.toggle('scrolling-active', windowPosition);
 });
 
-/*
+
 window.onload = function() {
     document.querySelector(".pageloader").style.opacity = 0;
     document.querySelector(".pageloader").style.transitionduration = "0.3s";
@@ -15,18 +15,18 @@ window.onload = function() {
     document.querySelector("nav").style.visibility = "visible";
     document.querySelector("html").style.overflow = "auto";
 };
-*/
 
-setTimeout(() => {
-    document.querySelector(".pageloader").style.opacity = 0;
-    document.querySelector(".pageloader").style.transitionduration = "0.3s";
-    document.querySelector(".pageloader").style.visibility = "hidden";
-    document.querySelector(".container").style.opacity = 1;
-    document.querySelector(".container").style.visibility = "visible";
-    document.querySelector("nav").style.opacity = 1;
-    document.querySelector("nav").style.visibility = "visible";
-    document.querySelector("html").style.overflow = "auto";
-}, 2000);
+
+// setTimeout(() => {
+//     document.querySelector(".pageloader").style.opacity = 0;
+//     document.querySelector(".pageloader").style.transitionduration = "0.3s";
+//     document.querySelector(".pageloader").style.visibility = "hidden";
+//     document.querySelector(".container").style.opacity = 1;
+//     document.querySelector(".container").style.visibility = "visible";
+//     document.querySelector("nav").style.opacity = 1;
+//     document.querySelector("nav").style.visibility = "visible";
+//     document.querySelector("html").style.overflow = "auto";
+// }, 2000);
 
 /*************** Typing effect ******************/
 /********** tuile ***********/
