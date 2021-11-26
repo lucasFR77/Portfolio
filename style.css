@@ -1487,12 +1487,11 @@ body.dark .card__by {
 }
 
 .cad__heading {
-    font-family: 'FS_Meridian_bold';
+    font-family: 'Gustavo_Medium';
     color: rgba(255, 255, 255, 0.9);
     font-size: 1.9rem;
     text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
-    line-height: 1.4;
-    word-spacing: 100vw;
+    line-height: 1.2;
 }
 
 .cad__details {
