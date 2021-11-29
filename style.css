@@ -646,8 +646,8 @@ body.dark .partRight {
     background: url(img/bghomedark.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 50%;
-    height: 600px;
+    width: 100%;
+    height: 330px;
     display: flex;
     justify-content: space-around;
     align-items: center;
