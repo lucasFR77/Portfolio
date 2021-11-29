@@ -441,7 +441,7 @@ body.dark .scrolling-active .nav a {
 body.dark .nav-list li a {
     text-decoration: none;
     text-transform: uppercase;
-    font-family: 'FS_Meridian_medium';
+    font-family: 'Gustavo_Medium';
     font-size: 23px;
     color: #fafafa;
 }
@@ -825,7 +825,6 @@ body.dark .prezcard {
 .textCenter {
     color: #141414;
     font-family: 'Gustavo_Bold';
-    /* font-family: 'FS_Meridian_medium'; */
     font-size: 36px;
     text-align: center;
     border-style: solid;
@@ -837,7 +836,7 @@ body.dark .prezcard {
 
 body.dark .textCenter {
     color: #fafafa;
-    font-family: 'FS_Meridian_medium';
+    font-family: 'Gustavo_Bold';
     font-size: 37px;
     border-style: solid;
     border-width: 0 0 .2em 0;
