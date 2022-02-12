@@ -956,7 +956,7 @@ body.dark .arrow {
 
 .chyout {
     background: linear-gradient(to right, hsla(249, 100%, 47%, 1), hsla(168, 100%, 50%, 1));
-    border-radius: 50px;
+    border-radius: 14px;
     color: #141414;
     display: flex;
     justify-content: space-evenly;
@@ -971,7 +971,7 @@ body.dark .arrow {
     background: #fff;
     display: block;
     padding: 16px 24px;
-    border-radius: 50px;
+    border-radius: 11px;
 }
 
 #skills {
