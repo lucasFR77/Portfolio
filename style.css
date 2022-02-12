@@ -1201,6 +1201,8 @@ body.dark .detailcomp {
 .card--6 .card__img,
 .card--6 .card__img--hover {
     background-image: url(img/picthouse.gif);
+    background-size: 70%;
+    background-color: #FAFAFA;
 }
 
 .card--7 .card__img,
