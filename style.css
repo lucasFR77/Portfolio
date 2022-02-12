@@ -1438,8 +1438,9 @@ body.dark .card__by {
     -webkit-backdrop-filter: blur(10px);
     -moz-backdrop-filter: blur(10px);
     border: 1.5px outset rgba(255, 255, 255, 0.38);
-    border-radius: 24px;
+    border-radius: 20px;
     transition-duration: 0.3s;
+    top: -2px;
 }
 
 .cad:hover .cad__details {
