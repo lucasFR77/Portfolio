@@ -347,7 +347,7 @@ body.dark {
 
 .logo {
     width: 50px;
-    margin-left: 20px;
+    margin-left: 35px;
     margin-top: 6px;
     margin-bottom: 6px;
     z-index: 2;
@@ -356,7 +356,7 @@ body.dark {
 nav {
     opacity: 0;
     visibility: hidden;
-    z-index: 3;
+    z-index: 20;
     background-color: white;
     position: fixed;
     width: 100%;
@@ -569,6 +569,7 @@ body.dark .burger .bar::after {
 .homePage {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     height: 800px;
     background: url(img/bghome2.webp);
@@ -579,25 +580,8 @@ body.dark .burger .bar::after {
 }
 
 body.dark .homePage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 800px;
     background: url(img/bghomedark2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
 }
-
-
-/* .homePage {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 800px;
-    padding-top: 40px;
-} */
 
 .contentHomepage {
     display: flex;
@@ -610,6 +594,7 @@ body.dark .homePage {
 .partLeft {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-around;
     width: 100%;
 }
@@ -628,8 +613,8 @@ body.dark .homePage {
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    width: 10.5rem;
-    height: 14rem;
+    width: 15.5rem;
+    height: 19rem;
     padding: 0.5rem;
     margin-left: 0rem;
     background: white;
@@ -638,15 +623,6 @@ body.dark .homePage {
 }
 
 body.dark .prezcard {
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    width: 15.5rem;
-    height: 21rem;
-    padding: 0.5rem;
-    margin-left: 0rem;
     background: black;
     box-shadow: 6px 6px 0px 0 #F3F3F3;
     border: 2px solid #F3F3F3;
@@ -812,12 +788,12 @@ body.dark .prezcard {
 .textCenter {
     color: #141414;
     font-family: 'Gustavo_Bold';
-    font-size: 36px;
+    font-size: 50px;
     border-style: solid;
     border-width: 0 0 .2em 0;
     width: fit-content;
     border-image: linear-gradient(45deg, hsla(249, 100%, 47%, 1), hsla(168, 100%, 50%, 1)) 1;
-    block-size: 90%;
+    block-size: 100%;
 }
 
 body.dark .textCenter {
@@ -835,15 +811,8 @@ body.dark .textCenter {
     display: flex;
     flex-direction: column;
     margin: 40px;
+    text-align: center;
 }
-
-
-/* .contentCenterHome {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 50px;
-} */
 
 #solidGradient {
     background: linear-gradient(45deg, hsla(249, 100%, 47%, 1), hsla(168, 100%, 50%, 1));
@@ -855,15 +824,13 @@ body.dark .textCenter {
 .contentHome {
     color: #141414b2;
     font-size: 16px;
+    text-align: center;
     line-height: 22px;
     margin: 10px;
 }
 
 body.dark .contentHome {
     color: #fafafab2;
-    font-size: 16px;
-    line-height: 22px;
-    margin: 24px;
 }
 
 .arrow {
@@ -1412,7 +1379,7 @@ body.dark .detailcomp {
 .card {
     margin-bottom: 30px;
     transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
-    background: #F3F3F3;
+    background: white;
     box-shadow: 6px 6px 0px 0 black;
     border: 2px solid black;
     width: 290px;
@@ -1433,8 +1400,7 @@ body.dark .card {
 
 .card__info {
     z-index: 2;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
+    border-top: 1px solid #e5e5e5;
     padding: 16px 24px 24px 24px;
     color: rgb(240 240 240 / 1);
     display: flex;
@@ -1928,11 +1894,8 @@ a {
         border-image-slice: 1
     } */
     .homePage {
-        height: 800px;
-        padding: 40px;
-    }
-    body.dark .homePage {
-        height: 800px;
+        justify-content: start;
+        height: 900px;
         padding: 40px;
     }
     .memojiTop {
@@ -1943,11 +1906,7 @@ a {
         width: 20%;
     } */
     .textCenter {
-        font-size: 60px;
-        line-height: 60px;
-        border-width: 0 0 0.13em 0;
-    }
-    body.dark .textCenter {
+        block-size: 90%;
         font-size: 60px;
         line-height: 60px;
         border-width: 0 0 0.13em 0;
@@ -1984,6 +1943,7 @@ a {
     }
     .partLeft {
         width: 50%;
+        align-items: start;
         padding-left: 100px;
     }
     .partRight {
@@ -2034,10 +1994,8 @@ a {
     }
     .contentCenterHome {
         margin: 30px 0 0 0;
+        text-align: left;
     }
-    /* .contentCenterHome {
-        margin: 40px;
-    } */
     .content {
         margin: 0 10rem 0 10rem;
     }
@@ -2055,8 +2013,7 @@ a {
     }
     #portrait {
         object-fit: cover;
-        width: 180px;
-        height: 240px;
+        width: 40%;
         border: 2px solid black;
         box-shadow: 6px 6px 0px 0 black;
     }
