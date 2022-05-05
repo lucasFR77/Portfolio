@@ -871,7 +871,7 @@ body.dark .arrow {
 }
 
 .star {
-    background-image: url(img/Star.png);
+    background-image: url(img/StarB.png);
     background-size: 100%;
     background-repeat: no-repeat;
     position: absolute;
@@ -882,7 +882,7 @@ body.dark .arrow {
 }
 
 .star2 {
-    background-image: url(img/StarB.png);
+    background-image: url(img/Star.png);
     background-size: 100%;
     background-repeat: no-repeat;
     position: absolute;
@@ -892,7 +892,7 @@ body.dark .arrow {
     top: 160px;
 }
 
-body.dark .star2 {
+body.dark .star {
     background-image: url(img/StarDark.png);
 }
 
