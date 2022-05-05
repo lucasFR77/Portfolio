@@ -571,7 +571,7 @@ body.dark .burger .bar::after {
     flex-direction: column;
     align-items: center;
     height: 800px;
-    background: url(img/bghome2.png);
+    background: url(img/bghome2.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
