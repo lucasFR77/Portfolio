@@ -26,7 +26,7 @@ setTimeout(() => {
     document.querySelector("nav").style.opacity = 1;
     document.querySelector("nav").style.visibility = "visible";
     document.querySelector("html").style.overflow = "auto";
-}, 2500);
+}, 3000);
 
 /*************** Typing effect ******************/
 /********** tuile ***********/
