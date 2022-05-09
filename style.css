@@ -581,6 +581,9 @@ body.dark .burger .bar::after {
 
 body.dark .homePage {
     background: url(img/bghomedark2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
 }
 
 .contentHomepage {
