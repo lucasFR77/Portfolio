@@ -166,47 +166,61 @@ html {
 
 /************dark mode*************/
 
-.buttonDark {
-    margin-right: 1.5rem;
-    margin-bottom: 5px;
-    box-sizing: border-box;
-}
-
-.checkbox {
-    opacity: 0;
-    position: absolute;
-}
-
-.label {
-    background-color: #141414;
-    border: 1px solid white;
-    border-radius: 50px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px;
+.switch {
+    /* --moon-mask: ; */
+    font-size: 17px;
     position: relative;
-    height: 21px;
-    width: 40px;
-    transform: scale(1.5);
+    display: inline-block;
+    width: 3.3em;
+    height: 1.7em;
 }
 
-.label .ball {
-    background-color: #fff;
-    border-radius: 50%;
+
+/* Hide default HTML checkbox */
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+/* The slider */
+
+.slider {
     position: absolute;
-    top: 2px;
-    left: 2px;
-    height: 15px;
-    width: 15px;
-    transform: translateX(0px);
-    transition: transform 0.2s linear;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f4f4f5;
+    box-shadow: 0px 0px 0px 1px #cecece;
+    transition: .4s;
+    border-radius: 20px;
 }
 
-.checkbox:checked+.label .ball {
-    box-shadow: 0px 0px 6px 0px rgb(255 255 255);
-    transform: translateX(19px);
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1.3em;
+    width: 1.3em;
+    border-radius: 20px;
+    left: 0.2em;
+    bottom: 0.2em;
+    background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #141414;
+    box-shadow: 0px 0px 0px 1px #252525;
+}
+
+input:checked+.slider:before {
+    transform: translateX(1.6em);
+    background: #141414;
+    box-shadow: inset -3px -2px 2px -2px #8983f7, inset -8px -5px 0px 0px #a3dafb;
 }
 
 
