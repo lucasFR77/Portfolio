@@ -841,7 +841,6 @@ body.dark .textCenter {
 .contentHome {
     color: #141414b2;
     font-size: 16px;
-    text-align: center;
     line-height: 22px;
     margin: 10px;
 }
@@ -1066,7 +1065,7 @@ body.dark .cercles {
     border: 2px solid black;
     top: 125rem;
     transform-style: preserve-3d;
-    transition: transform .3s;
+    transition: all 0.3s;
     transition-timing-function: cubic-bezier(0.445, 1.65, 0.455, 1.485);
 }
 
@@ -1191,7 +1190,7 @@ body.dark .comp5 {
     border: 2px solid #F3F3F3;
     top: 125rem;
     transform-style: preserve-3d;
-    transition: transform .3s;
+    transition: all 0.3s;
     transition-timing-function: cubic-bezier(0.445, 1.65, 0.455, 1.485);
 }
 
@@ -1215,7 +1214,6 @@ body.dark .comp5 {
     padding-bottom: 1rem;
     display: flex;
     flex-direction: column;
-    transition-duration: 0.2s;
 }
 
 .comp1.active:hover,
@@ -1244,7 +1242,6 @@ body.dark .comp5.active {
 .comp1.active .imgCompPlume {
     width: 30%;
     margin-bottom: 0.5rem;
-    transition-duration: 0.2s;
 }
 
 .comp1.active .detailcomp,
@@ -1252,60 +1249,61 @@ body.dark .comp5.active {
 .comp3.active .detailcomp,
 .comp4.active .detailcomp,
 .comp5.active .detailcomp {
-    display: block;
-    visibility: visible;
-    opacity: 1;
+    content-visibility: visible;
+    position: initial;
     font-size: 14px;
-    transition-duration: 0.2s;
+    transition: all 0.3s;
 }
 
 .detailcomp {
-    display: none;
-    visibility: hidden;
-    opacity: 0;
+    content-visibility: hidden;
+    position: absolute;
     font-family: 'Montserrat';
     font-weight: 400;
     color: rgba(0, 0, 0, 0.670);
     margin-top: 20px;
     line-height: 1.3;
-    font-size: 0px;
-    transition-duration: 0.2s;
+    font-size: 14px;
+    transition: all 0.3s;
 }
 
 body.dark .detailcomp {
-    visibility: hidden;
-    opacity: 0;
+    content-visibility: hidden;
+    position: absolute;
     font-family: 'Montserrat';
     font-weight: 400;
     color: rgba(247, 247, 247, 0.67);
     margin-top: 20px;
     line-height: 1.3;
     font-size: 0px;
-    transition-duration: 0.2s;
+    transition: all 0.3s;
 }
 
 .imgCompPlume {
     width: 45%;
-    transition-duration: 0.2s;
+    transition: all 0.3s;
 }
 
 .imgComp {
     width: 68%;
+    transition: all 0.3s;
 }
 
 .imgCompRS {
     width: 65%;
+    transition: all 0.3s;
 }
 
 .imgCompEclair {
     width: 55%;
+    transition: all 0.3s;
 }
 
 .textComp {
     font-family: 'Montserrat';
     font-weight: 500;
     font-size: 17px;
-    transition-duration: 0.2s;
+    transition: all 0.3s;
 }
 
 #exp {

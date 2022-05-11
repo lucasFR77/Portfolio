@@ -227,6 +227,7 @@ $('.comp5').click(function() {
 });
 
 
+
 /************* Dark mode **************/
 
 const chk = document.getElementById('chk');
