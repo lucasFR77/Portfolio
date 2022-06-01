@@ -1330,8 +1330,8 @@ body.dark .detailcomp {
 
 .card--7 .card__img,
 .card--7 .card__img--hover {
-    background-image: url(img/digital-campus.jpg);
-    background-size: 70%;
+    background-image: url(img/dc.gif);
+    background-size: 200%;
     background-color: #24a2b0;
 }
 
