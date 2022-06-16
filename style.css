@@ -375,7 +375,6 @@ nav {
     position: fixed;
     width: 100%;
     display: flex;
-    border-radius: 0 0 10px 10px;
     align-items: center;
     justify-content: space-between;
     -webkit-box-shadow: 0px 2px 9px 5px rgba(0, 0, 0, 0.06);
@@ -510,7 +509,7 @@ body.dark .burger .bar::after {
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        transform: translateX(-100%);
+        transform: translateX(100%);
         transition: transform .3s;
     }
     body.dark .nav-list {
@@ -529,7 +528,7 @@ body.dark .burger .bar::after {
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        transform: translateX(-100%);
+        transform: translateX(100%);
         transition: transform .3s;
     }
     .nav-list li {
@@ -598,6 +597,7 @@ body.dark .homePage {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
+    height: 900px;
 }
 
 .contentHomepage {
@@ -684,6 +684,7 @@ body.dark .prezcard {
     text-decoration: none;
     transform-style: preserve-3d;
     z-index: 3;
+    transform: translate(-3px, -3px);
     transition-duration: 0.2s;
 }
 
@@ -694,40 +695,14 @@ body.dark .prezcard {
     border: 2px solid black;
     width: 100%;
     height: 100%;
-    top: -2px;
-    left: -2px;
-    transform: translateZ(-1px);
-    transition-duration: 0.2s;
-}
-
-.cvprez:hover {
-    transform: translate(-3px, -3px);
-}
-
-.cvprez:hover:before {
-    content: '';
-    position: absolute;
-    background-image: linear-gradient(to right, hsla(249, 100%, 47%, 1), hsla(168, 100%, 50%, 1));
-    border: 2px solid black;
-    width: 100%;
-    height: 100%;
     top: 5px;
     left: 5px;
     transform: translateZ(-1px);
+    transition-duration: 0.2s;
 }
 
 #buttonGradientcv {
-    background: linear-gradient( 45deg, hsla(249, 100%, 47%, 1), hsla(168, 100%, 50%, 1));
-    width: 170px;
-    height: 35px;
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    margin-top: 22px;
-    filter: blur(10px);
-    -webkit-filter: blur(10px);
-    position: absolute;
-    z-index: 1;
-    transition-duration: 0.2s;
+    display: none;
 }
 
 
@@ -904,8 +879,8 @@ body.dark .arrow {
     position: absolute;
     width: 35px;
     height: 45px;
-    left: 200px;
-    top: 160px;
+    left: 300px;
+    top: 110px;
 }
 
 body.dark .star {
@@ -929,9 +904,11 @@ body.dark .cercles {
 
 #about {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    height: 650px;
     margin: 10px 0 100px 0;
     transform-style: preserve-3d;
 }
@@ -942,8 +919,22 @@ body.dark .cercles {
     margin-bottom: 20px;
 }
 
-#portrait {
+.portrait1,
+.portrait2,
+.portrait3 {
+    object-fit: cover;
+    width: 40%;
+    border: 2px solid black;
+    box-shadow: 6px 6px 0px 0 black;
     width: 210px;
+}
+
+.portrait2 {
+    display: none;
+}
+
+.portrait3 {
+    display: none;
 }
 
 .sousName {
@@ -1003,6 +994,12 @@ body.dark .cercles {
 
 #skills {
     margin-bottom: 60px;
+}
+
+.textContent1 {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 30px;
 }
 
 @media only screen and (max-width:500px) {
@@ -1308,6 +1305,10 @@ body.dark .detailcomp {
 
 #exp {
     margin-bottom: 60px;
+}
+
+#passion .pretitle {
+    width: 100%;
 }
 
 .cards {
@@ -1620,12 +1621,6 @@ body.dark .para {
     line-height: 1.3;
 }
 
-#passion .pretitle {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-}
-
 #action {
     width: 100%;
     border: 2px solid black;
@@ -1913,6 +1908,10 @@ a {
         height: 900px;
         padding: 40px;
     }
+    .star2 {
+        left: 200px;
+        top: 160px;
+    }
     .memojiTop {
         width: 40%;
         margin-top: 0;
@@ -2007,6 +2006,46 @@ a {
     .cvprez span {
         padding: 16px 37px;
     }
+    .cvprez {
+        color: #141414;
+        background-color: white;
+        border: 2px solid black;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 18px;
+        padding: 2px;
+        text-decoration: none;
+        transform-style: preserve-3d;
+        z-index: 3;
+        transition-duration: 0.2s;
+    }
+    .cvprez:before {
+        content: '';
+        position: absolute;
+        background-image: linear-gradient(to right, hsla(249, 100%, 47%, 1), hsla(168, 100%, 50%, 1));
+        border: 2px solid black;
+        width: 100%;
+        height: 100%;
+        top: -2px;
+        left: -2px;
+        transform: translateZ(-1px);
+        transition-duration: 0.2s;
+    }
+    .cvprez:hover {
+        transform: translate(-3px, -3px);
+    }
+    .cvprez:hover:before {
+        content: '';
+        position: absolute;
+        background-image: linear-gradient(to right, hsla(249, 100%, 47%, 1), hsla(168, 100%, 50%, 1));
+        border: 2px solid black;
+        width: 100%;
+        height: 100%;
+        top: 5px;
+        left: 5px;
+        transform: translateZ(-1px);
+    }
     .contentCenterHome {
         margin: 30px 0 0 0;
         text-align: left;
@@ -2020,17 +2059,37 @@ a {
     .portski {
         width: 20%;
     }
+    #about {
+        flex-direction: row;
+        height: 100%;
+    }
     .photoPortrait {
         display: flex;
         flex-direction: column;
         align-items: end;
         width: 40%;
     }
-    #portrait {
+    .portrait1,
+    .portrait2,
+    .portrait3 {
         object-fit: cover;
         width: 40%;
         border: 2px solid black;
         box-shadow: 6px 6px 0px 0 black;
+        width: 210px;
+    }
+    .portrait1 {
+        margin-right: 200px;
+    }
+    .portrait2 {
+        display: block;
+        margin-top: -140px;
+    }
+    .portrait3 {
+        display: block;
+        margin-right: 200px;
+        margin-top: -80px;
+        z-index: 1;
     }
     body.dark #portrait {
         object-fit: cover;
@@ -2059,10 +2118,26 @@ a {
         z-index: 2;
     }
     .textContent1 {
+        line-height: 16px;
+        margin-bottom: 0px;
         margin-left: 10px;
         margin-right: 10px;
         line-height: 20px;
         width: 70%;
+    }
+    #buttonGradientcv {
+        display: block;
+        background: linear-gradient( 45deg, hsla(249, 100%, 47%, 1), hsla(168, 100%, 50%, 1));
+        width: 170px;
+        height: 35px;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        margin-top: 22px;
+        filter: blur(10px);
+        -webkit-filter: blur(10px);
+        position: absolute;
+        z-index: 1;
+        transition-duration: 0.2s;
     }
     #buttonGradient0 {
         opacity: 0;
@@ -2228,6 +2303,11 @@ a {
     .buttonplushover4:hover #buttonGradient4 {
         opacity: 1;
         transition-duration: 0.2s;
+    }
+    #passion .pretitle {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
     }
     .ligne {
         width: 100%;
