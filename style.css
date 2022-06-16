@@ -1247,6 +1247,8 @@ body.dark .comp5.active {
 .comp4.active .detailcomp,
 .comp5.active .detailcomp {
     content-visibility: visible;
+    visibility: visible;
+    opacity: 1;
     position: initial;
     font-size: 14px;
     transition: all 0.3s;
@@ -1254,6 +1256,8 @@ body.dark .comp5.active {
 
 .detailcomp {
     content-visibility: hidden;
+    visibility: hidden;
+    opacity: 0;
     position: absolute;
     font-family: 'Montserrat';
     font-weight: 400;
@@ -1266,6 +1270,8 @@ body.dark .comp5.active {
 
 body.dark .detailcomp {
     content-visibility: hidden;
+    visibility: hidden;
+    opacity: 0;
     position: absolute;
     font-family: 'Montserrat';
     font-weight: 400;
