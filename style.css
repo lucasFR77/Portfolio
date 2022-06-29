@@ -593,7 +593,7 @@ body.dark .burger .bar::after {
 }
 
 body.dark .homePage {
-    background: url(img/bghomedark2.png);
+    background: url(img/bghomedark2.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -1330,14 +1330,14 @@ body.dark .detailcomp {
 
 .card--6 .card__img,
 .card--6 .card__img--hover {
-    background-image: url(img/picthouse.gif);
+    background-image: url(img/picthouse.webm);
     background-size: 70%;
     background-color: white;
 }
 
 .card--7 .card__img,
 .card--7 .card__img--hover {
-    background-image: url(img/dc.gif);
+    background-image: url(img/dc.webm);
     background-size: 200%;
     background-color: #24a2b0;
 }
@@ -1855,6 +1855,7 @@ a {
         box-shadow: 6px 6px 20px 0 rgb(0 0 0 / 15%);
     }
     body.dark .scrolling-active {
+        z-index: 10;
         background-color: rgba(20, 20, 20, 0.5);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
@@ -2080,8 +2081,8 @@ a {
     .portrait3 {
         object-fit: cover;
         width: 40%;
-        border: 2px solid black;
-        box-shadow: 6px 6px 0px 0 black;
+        border: 2px solid white;
+        box-shadow: 6px 6px 0px 0 white;
         width: 210px;
     }
     .portrait1 {
