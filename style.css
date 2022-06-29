@@ -2081,6 +2081,15 @@ a {
     .portrait3 {
         object-fit: cover;
         width: 40%;
+        border: 2px solid black;
+        box-shadow: 6px 6px 0px 0 black;
+        width: 210px;
+    }
+    body.dark .portrait1,
+    body.dark .portrait2,
+    body.dark .portrait3 {
+        object-fit: cover;
+        width: 40%;
         border: 2px solid white;
         box-shadow: 6px 6px 0px 0 white;
         width: 210px;
