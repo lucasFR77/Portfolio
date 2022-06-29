@@ -5,19 +5,7 @@ window.addEventListener('scroll', function() {
 });
 
 
-// window.onload = function() {
-//     document.querySelector(".pageloader").style.opacity = 0;
-//     document.querySelector(".pageloader").style.transitionduration = "0.3s";
-//     document.querySelector(".pageloader").style.visibility = "hidden";
-//     document.querySelector(".container").style.opacity = 1;
-//     document.querySelector(".container").style.visibility = "visible";
-//     document.querySelector("nav").style.opacity = 1;
-//     document.querySelector("nav").style.visibility = "visible";
-//     document.querySelector("html").style.overflow = "auto";
-// };
-
-
-setTimeout(() => {
+window.onload = function() {
     document.querySelector(".pageloader").style.opacity = 0;
     document.querySelector(".pageloader").style.transitionduration = "0.3s";
     document.querySelector(".pageloader").style.visibility = "hidden";
@@ -26,7 +14,19 @@ setTimeout(() => {
     document.querySelector("nav").style.opacity = 1;
     document.querySelector("nav").style.visibility = "visible";
     document.querySelector("html").style.overflow = "auto";
-}, 3000);
+};
+
+
+// setTimeout(() => {
+//     document.querySelector(".pageloader").style.opacity = 0;
+//     document.querySelector(".pageloader").style.transitionduration = "0.3s";
+//     document.querySelector(".pageloader").style.visibility = "hidden";
+//     document.querySelector(".container").style.opacity = 1;
+//     document.querySelector(".container").style.visibility = "visible";
+//     document.querySelector("nav").style.opacity = 1;
+//     document.querySelector("nav").style.visibility = "visible";
+//     document.querySelector("html").style.overflow = "auto";
+// }, 3000);
 
 /*************** Typing effect ******************/
 /********** tuile ***********/
