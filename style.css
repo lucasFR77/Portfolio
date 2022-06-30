@@ -1328,20 +1328,6 @@ body.dark .detailcomp {
     margin: auto;
 }
 
-.card--6 .card__img,
-.card--6 .card__img--hover {
-    background-image: url(img/picthouse.webm);
-    background-size: 70%;
-    background-color: white;
-}
-
-.card--7 .card__img,
-.card--7 .card__img--hover {
-    background-image: url(img/dc.webm);
-    background-size: 200%;
-    background-color: #24a2b0;
-}
-
 .card--8 .card__img,
 .card--8 .card__img--hover {
     background-image: url(img/servierlab.jpg);
@@ -1553,6 +1539,7 @@ body.dark .para {
 }
 
 .cad__background {
+    overflow: hidden;
     z-index: 1;
     background-size: cover;
     background-position: center;
@@ -1569,6 +1556,20 @@ body.dark .para {
     -webkit-transform: scale(1) translateZ(0);
     transition: filter 200ms linear, transform 200ms linear;
     -webkit-transition: filter 200ms linear, transform 200ms linear;
+}
+
+.cad__background #sansfin {
+    height: 100%;
+    transform: translate(-30%);
+}
+
+#picthouse,
+#santeny {
+    width: 100%;
+}
+
+#studio {
+    height: 100%;
 }
 
 .cad:hover .cad__background {

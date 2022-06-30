@@ -17,7 +17,7 @@
 <body>
     <!-- DEBUT LOADER -->
     <div class="pageloader">
-        <video class="logoLoader" autoplay><source src="img/loader.webm" type="video/webm"></video>
+        <video class="logoLoader" autoplay muted src="img/loader.webm" type="video/webm"></video>
         <div class="loader">
             <span></span>
             <span></span>
@@ -190,7 +190,9 @@
                             </div>
                             <div class="card__img"></div>
                             <a class="card_link">
-                                <div class="card__img--hover"></div>
+                                <div class="card__img--hover" style="background-color: white; overflow: hidden;">
+                                    <video style="transform: translate(25%);" height="100%" src="img/picthouse.webm" autoplay muted loop></video>
+                                </div>
                             </a>
                             <div class="card__info">
                                 <span class="card__category">Avril 2021 - Actuellement</span>
@@ -208,7 +210,8 @@
                             </div>
                             <div class="card__img"></div>
                             <a class="card_link">
-                                <div class="card__img--hover"></div>
+                                <div class="card__img--hover">
+                                    <video style="transform: translate(-8.5%);" height="100%" src="img/dc.webm" autoplay muted loop></video></div>
                             </a>
                             <div class="card__info">
                                 <span class="card__category">Septembre 2020 - Actuellement</span>
@@ -323,7 +326,7 @@
                             </div>
                         </a>
                         <a class="cad" href="https://youtu.be/d8mmLDdwBP4" target="blanck" data-aos="zoom-in" data-aos-delay="500">
-                            <div class="cad__background" style="background-image: url(img/sansfin.webm)"></div>
+                            <div class="cad__background"><video id="sansfin" src="img/sansfin.webm" autoplay muted loop></video></div>
 
                             <div class="cad__content">
                                 <p class="cad__category">Février - Mars 2021</p>
@@ -344,7 +347,7 @@
                             </div>
                         </a>
                         <a class="cad" href="https://www.picthouse.fr" target="blanck" data-aos="zoom-in" data-aos-delay="500">
-                            <div class="cad__background" style="background-image: url(img/site_picthouse.webm); background-position: top; background-repeat: no-repeat; background-color: white;"></div>
+                            <div class="cad__background"><video id="picthouse" src="img/site_picthouse.webm" autoplay muted loop></video></div>
                             <div class="cad__content">
                                 <p class="cad__category">Mai - Décembre 2021</p>
                                 <h3 class="cad__heading">Identité + site web PictHouse</h3>
@@ -356,7 +359,7 @@
                             </div>
                         </a>
                         <a class="cad" href="https://www.santenysolex.fr" target="blanck" data-aos="zoom-in" data-aos-delay="500">
-                            <div class="cad__background" style="background-image: url(img/santenysolex.webm); background-size: 70%; background-repeat: no-repeat; background-color: white;"></div>
+                            <div class="cad__background" style="background-color: white;"><video id="santeny" src="img/santenysolex.webm" autoplay muted loop></video></div>
                             <div class="cad__content">
                                 <p class="cad__category">Octobre 2021 - Février 2022</p>
                                 <h3 class="cad__heading">Refont site Santeny Solex</h3>
@@ -367,7 +370,7 @@
                             </div>
                         </a>
                         <a class="cad" href="https://www.studio.picthouse.fr" target="blanck" data-aos="zoom-in" data-aos-delay="500">
-                            <div class="cad__background" style="background-image: url(img/studio.webm); background-position: top; background-repeat: no-repeat; background-color: white;"></div>
+                            <div class="cad__background"><video id="studio" src="img/studio.webm" autoplay muted loop></video></div>
                             <div class="cad__content">
                                 <p class="cad__category">Février - Mars 2022</p>
                                 <h3 class="cad__heading">Site web Studio PictHouse</h3>
@@ -440,7 +443,7 @@
                 </div>
             </div>
             <div id="memojiContact" data-aos="zoom-in" data-aos-delay="100">
-                <video id="imgmem" alt="memoji contact" src="img/memoji.webm" autoplay></video>
+                <video id="imgmem" alt="memoji contact" src="img/memoji.webm" autoplay muted></video>
                 <img id="imgmem2" alt="memoji contact" src="img/memoji.png">
             </div>
         </section>
