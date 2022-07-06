@@ -639,7 +639,7 @@ body.dark .homePage {
 }
 
 body.dark .prezcard {
-    background: black;
+    background: #141414;
     box-shadow: 6px 6px 0px 0 #F3F3F3;
     border: 2px solid #F3F3F3;
 }
@@ -1170,7 +1170,7 @@ body.dark .comp5 {
     height: 14rem;
     padding: 0.5rem;
     margin-left: 1.8rem;
-    background-color: black;
+    background-color: #141414;
     border: 2px solid #F3F3F3;
     top: 125rem;
     transform-style: preserve-3d;
@@ -1395,7 +1395,7 @@ body.dark .textComp {
 body.dark .card {
     margin-bottom: 30px;
     transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
-    background: black;
+    background: #141414;
     box-shadow: 6px 6px 0px 0 #F3F3F3;
     border: 2px solid #F3F3F3;
     width: 290px;
@@ -1907,7 +1907,6 @@ a {
         -webkit-backdrop-filter: blur(10px);
         -moz-backdrop-filter: blur(10px);
         height: 80px;
-        border-radius: 0rem 0rem 1rem 1rem;
         border-bottom: 1.5px solid rgb(255 255 255 / 30%);
         box-shadow: 6px 6px 20px 0 rgb(0 0 0 / 15%);
     }
