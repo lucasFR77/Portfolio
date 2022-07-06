@@ -1556,6 +1556,27 @@ body.dark .para {
     -webkit-transition: filter 200ms linear, transform 200ms linear;
 }
 
+body.dark .cad__background {
+    overflow: hidden;
+    z-index: 1;
+    background-size: cover;
+    background-position: center;
+    bottom: 0;
+    filter: saturate(1.2) contrast(0.75);
+    -webkit-filter: saturate(1.2) contrast(0.75);
+    border: 2px solid white;
+    box-shadow: 6px 6px 0px 0 white;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform-origin: center;
+    transform: scale(1) translateZ(0);
+    -webkit-transform: scale(1) translateZ(0);
+    transition: filter 200ms linear, transform 200ms linear;
+    -webkit-transition: filter 200ms linear, transform 200ms linear;
+}
+
 .cad__background #sansfin {
     height: 101%;
     transform: translate(-30%);
@@ -1579,8 +1600,16 @@ body.dark .para {
     background-color: white;
     border: 2px solid black;
     transition-duration: 0.3s;
-    /* top: -2px;
-    height: 101%; */
+    top: -9px;
+    width: 105%;
+    left: -6px;
+    height: 105%;
+}
+
+body.dark .cad:hover .cad__content {
+    background-color: #141414;
+    border: 2px solid white;
+    transition-duration: 0.3s;
     top: -9px;
     width: 105%;
     left: -6px;
@@ -1593,6 +1622,10 @@ body.dark .para {
 
 .cad:hover .cad__heading {
     color: black;
+}
+
+body.dark .cad:hover .cad__heading {
+    color: white;
 }
 
 .cad__content {
@@ -1628,6 +1661,15 @@ body.dark .para {
     font-family: 'Montserrat';
     font-weight: 400;
     color: #141414;
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+body.dark .cad__details {
+    display: none;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color: white;
     font-size: 15px;
     line-height: 1.3;
 }
