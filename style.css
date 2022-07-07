@@ -1055,11 +1055,16 @@ body.dark .cercles {
 
 .textContent {
     line-height: 23px;
+    margin-bottom: 30px;
 }
 
 .cvbutton {
     display: flex;
     justify-content: center;
+}
+
+.contente {
+    margin-bottom: 20px;
 }
 
 .chyout {
@@ -1332,6 +1337,10 @@ body.dark .comp5.active {
     transition: all 0.3s;
 }
 
+.bookibook {
+    margin-top: 40px;
+}
+
 .detailcomp {
     content-visibility: hidden;
     visibility: hidden;
@@ -1598,15 +1607,11 @@ body.dark .para {
     width: 100%;
 }
 
-@media(min-width: 540px) {
+@media(max-width: 960px) {
     .cad-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media(min-width: 960px) {
-    .cad-grid {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 2fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
     }
 }
 
