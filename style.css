@@ -1724,6 +1724,29 @@ body.dark .cad:hover .cad__heading {
     color: white;
 }
 
+@media screen and (max-width: 960px) {
+    .cad:hover .cad__background {
+        transform: scale(1) translateZ(0);
+        -webkit-transform: scale(1) translateZ(0);
+    }
+    .cad:hover .cad__content {
+        background-color: transparent;
+        border: none;
+    }
+    body.dark .cad:hover .cad__content {
+        display: none;
+    }
+    .cad:hover .cad__details {
+        display: none;
+    }
+    .cad:hover .cad__heading {
+        color: white;
+    }
+    body.dark .cad:hover .cad__heading {
+        color: white;
+    }
+}
+
 .cad__content {
     z-index: 2;
     left: 0;
