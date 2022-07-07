@@ -625,7 +625,7 @@ body.dark .homePage {
     visibility: hidden;
     opacity: 0;
     position: absolute;
-    left: 150px;
+    left: 100px;
     top: 65px;
     display: flex;
     flex-direction: column;
@@ -641,7 +641,7 @@ body.dark .mapunder {
     visibility: hidden;
     opacity: 0;
     position: absolute;
-    left: 150px;
+    left: 100px;
     top: 65px;
     display: flex;
     flex-direction: column;
