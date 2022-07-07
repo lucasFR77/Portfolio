@@ -654,7 +654,7 @@ body.dark .mapunder {
 }
 
 .bgmap {
-    background-image: url(img/map.png);
+    background-image: url(img/map.webp);
     background-size: 100%;
     width: 100%;
     border-radius: 15px;
@@ -662,7 +662,7 @@ body.dark .mapunder {
 }
 
 body.dark .bgmap {
-    background-image: url(img/mapdark.png);
+    background-image: url(img/mapdark.webp);
     background-size: 100%;
     width: 100%;
     border-radius: 15px;
