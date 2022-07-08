@@ -10,7 +10,7 @@
     <link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
     <link rel="apple-touch-icon" href="img/favicon.ico">
     <link rel="icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Portfolio - Lucas Ferrari</title>
 </head>
 
@@ -412,19 +412,12 @@
             <div class="contenu">
                 <p class="contente">Merci d'avoir visité mon portfolio !</p>
                 <div class="social">
-                    <div class="wrapper">
-                        <div class="icon linkedin">
-                            <div class="tooltip">LinkedIn</div>
-                            <span><a href="https://www.linkedin.com/in/lucas-f-93231b157/" target="blank"><i class="fab fa-linkedin-in"></i></a></span>
-                        </div>
-                        <div class="icon behance">
-                            <div class="tooltip">Behance</div>
-                            <span><a href="https://www.behance.net/lucasferrari3" target="blank"><i class="fab fa-behance"></i></a></span>
-                        </div>
+                    <div class="badge-base LI-profile-badge" data-locale="fr_FR" data-size="large" data-theme="light" data-type="VERTICAL" data-vanity="lucas-f-93231b157" data-version="v1">
+                        <a class="badge-base__link LI-simple-link" href="https://fr.linkedin.com/in/lucas-f-93231b157?trk=profile-badge"></a>
                     </div>
                 </div>
                 <p class="contente">Mais le mieux, ça reste de ⬇️</p>
-                <div class="cvbutton">
+                <div class="cvbutton" style="margin: 0;">
                     <div class="buttonplushover4">
                         <a class="cvprez" type="button" href="mailto:lucasemeu77@gmail.com?subject=PortFolio : " target="_blank"><span><i class="reseau fas fa-envelope" style="margin-right: 15px;"></i>M'envoyer un mail</span></a>
                         <div id="buttonGradient4"></div>
@@ -450,6 +443,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/gsap.min.js"></script>
     <script src="https://kit.fontawesome.com/8d2bd8300c.js" crossorigin="anonymous"></script>
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
     <script>
         AOS.init();
