@@ -492,6 +492,37 @@ body.dark .burger .bar::after {
     display: none;
 }
 
+.turndark {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    right: 10px;
+    bottom: -15px;
+    font-size: 13px;
+    background: linear-gradient(150deg, rgba(255, 255, 255, 1) 50%, rgba(20, 20, 20, 1) 50%);
+    padding: 10px;
+    border-radius: 10px;
+    transition-duration: 0.2s;
+    z-index: 1;
+    transform: translateY(8px);
+}
+
+body.dark .turndark {
+    display: none;
+}
+
+.turndark span {
+    background: linear-gradient(150deg, rgba(20, 20, 20, 1) 50%, rgba(255, 255, 255, 1) 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.menu:nth-child(7):hover+.turndark {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+}
+
 @media only screen and (max-width:600px) {
     .nav-list {
         position: fixed;
