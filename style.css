@@ -1784,6 +1784,7 @@ body.dark .cad:hover .cad__heading {
     padding: 22px;
     position: absolute;
     top: 0;
+    background-color: transparent;
     transition-duration: 0.3s;
 }
 
